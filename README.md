@@ -1,34 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# INTER-WEBB INTERVIEW CODING CHALLENGE
 
-## Getting Started
+Hello potential Inter-webb Intern, In this challenge you are required to build a full-stack Vehicle management web app.
 
-First, run the development server:
+Your app should be able to receive user input from a frontend form, save the data into a database and display the entries.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Please read all the instructions before you get started.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Instructions:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Clone this repo to your local machine
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+1. Run npm install to install npm packages, `prisma` for CRUD and `Zod` for backend validation
+2. Navigate to the folder called `pages/vehicle`:
+    - In this folder create a `form.tsx` file. This is where your form logic will be.
+    - The form should consist of 3 fields, `name`, `model` and `number of wheels`. The number of wheels should have 3 options, 2 wheels, 3 wheels and 4 wheels.
+    - The form fields should be `required` and only accept input of the right type.
+    - In the same folder create an `index.tsx` file where you will display all the vehicles in the db.
+    - The vehicle data should be displayed alongside `edit` and `delete` buttons. Both should be functional
+3. In the `pages/api` folder you are required to create 2 api endpoints:
+   - The first api endpoint will handle `creation` of a single vehicle entry and `retrieval` of all vehicle entries
+   - The second api endpoint will handle `updating`, `deleting` and `retrieving` a single entry.
+   - Data received at both api endpoints should be validated with ZOD.
+4. Once the web app is complete, you are required to `push your code to a public github repo` and then share with us the link to your repo at this email: interwebbbc@gmail.com
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Technologies to be used
+Next.Js
+TypeScript
+Prisma
+Zod
+SQL database of your choice
 
-## Learn More
+## Additional notes:
+Extra points will be awarded to candidates with
+Good UI
+Commented code
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
