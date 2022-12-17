@@ -24,14 +24,14 @@ Clone this repo to your local machine
 4. Once the web app is complete, you are required to `push your code to a public github repo` and then share with us the link to your repo at this email: interwebbbc@gmail.com
 
 ## Technologies to be used
-Next.Js
-TypeScript
-Prisma
-Zod
-SQL database of your choice
+- Next.Js
+- TypeScript
+- Prisma
+- Zod
+- SQL database of your choice
 
 ## Additional notes:
-Extra points will be awarded to candidates with
-Good UI
-Commented code
+Extra points will be awarded to candidates with:
+- Good UI
+- Commented code
 
